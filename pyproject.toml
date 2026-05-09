@@ -1,0 +1,18 @@
+[project]
+name = "security-researcher-agent"
+version = "0.1.0"
+description = "A local AI-assisted security research agent for authorized Linux assessments."
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Security Researcher Agent" }]
+dependencies = []
+
+[project.scripts]
+security-researcher-agent = "security_researcher_agent.cli:main"
+sra = "security_researcher_agent.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
